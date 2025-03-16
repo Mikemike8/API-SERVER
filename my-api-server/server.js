@@ -38,7 +38,7 @@ app.put('/items/:id', (req, res) => {
 });
 
 
-// Delete (DELETE): Delete an item by ID
+// Delete (DELETE): Delete an item by IDn
 app.delete('/items/:id', (req, res) => {
     const itemIndex = items.findIndex(i => i.id === parseInt(req.params.id));
     if (itemIndex === -1) return res.status(404).send('Item not found');
@@ -50,7 +50,7 @@ app.delete('/items/:id', (req, res) => {
 
 
 app.get('/', (req, res) => {
-    res.send('Server is running bitch');
+    res.json(items); 
 });
 
 app.listen(PORT, () => {
