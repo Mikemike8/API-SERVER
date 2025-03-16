@@ -99,3 +99,11 @@ This guide ensures you can set up and run your Express server smoothly! 🚀
 
 npm init -y
 npm install express cors dotenv    
+
+
+how to post using thuder client 
+
+{
+  "id": 3,
+  "name": "Item 3"
+}
